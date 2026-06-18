@@ -1,0 +1,38 @@
+/* ==========================================================================
+   RESPONSIVE.CSS — Ajustes finos transversales (mobile-first refinements)
+   Los breakpoints específicos de cada componente viven en su propio archivo;
+   aquí van los ajustes generales que afectan a varias secciones a la vez.
+   ========================================================================== */
+
+@media (max-width: 1040px){
+  .wrap{ padding: 0 20px; }
+}
+
+@media (max-width: 600px){
+  .wrap{ padding: 0 16px; }
+
+  .news, .game-center, .players, .rules, .teams, .videos{
+    padding: 56px 0;
+  }
+
+  .section-head{ margin-bottom: 26px; }
+
+  .btn{ padding: 13px 20px; font-size: 13px; }
+
+  .hero-slide-actions .btn{ width: 100%; justify-content: center; }
+  .hero-slide-actions{ flex-direction: column; }
+}
+
+@media (max-width: 420px){
+  .brand-text{ font-size: 13px; }
+  .brand-text span{ font-size: 10px; }
+}
+
+@media (hover: none) and (pointer: coarse){
+  .btn, .cat-link, .news-link, .rule-download{ min-height: 44px; }
+}
+
+@media print{
+  header, .hero-slider, .streaming, footer, .court-divider{ display: none; }
+  body{ background: white; color: black; }
+}

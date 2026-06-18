@@ -1,0 +1,32 @@
+[
+  {
+    "id": "noticia-001",
+    "categoria": "Torneos",
+    "fecha": "2026-06-12",
+    "titular": "Reemplaza este titular con la noticia principal de la semana",
+    "extracto": "Aquí va el copete o resumen breve de la noticia, dos líneas son suficientes para invitar a leer más.",
+    "imagen": "",
+    "destacada": true,
+    "enlace": "#"
+  },
+  {
+    "id": "noticia-002",
+    "categoria": "Selección",
+    "fecha": "2026-06-08",
+    "titular": "Titular de segunda noticia",
+    "extracto": "Resumen breve de la segunda noticia.",
+    "imagen": "",
+    "destacada": false,
+    "enlace": "#"
+  },
+  {
+    "id": "noticia-003",
+    "categoria": "Clubes",
+    "fecha": "2026-06-02",
+    "titular": "Titular de tercera noticia",
+    "extracto": "Resumen breve de la tercera noticia.",
+    "imagen": "",
+    "destacada": false,
+    "enlace": "#"
+  }
+]

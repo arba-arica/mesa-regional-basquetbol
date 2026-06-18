@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mesa Regional de Básquetbol · XV Región de Arica y Parinacota</title>
+<meta name="description" content="Noticias, torneos por categoría, verificación de jugadores y transmisiones del básquetbol federado de la XV Región de Arica y Parinacota.">
+<meta name="theme-color" content="#0A1628">
+
+<!-- Open Graph / SEO social -->
+<meta property="og:title" content="Mesa Regional de Básquetbol · XV Región">
+<meta property="og:description" content="Noticias, torneos y programación oficial del básquetbol de Arica y Parinacota.">
+<meta property="og:type" content="website">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800&family=Roboto+Mono:wght@500;700&display=swap" rel="stylesheet">
+
+<!-- Font Awesome (iconografía) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<!-- Swiper.js (hero slider) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css">
+
+<!-- Hojas de estilo modulares -->
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/header.css">
+<link rel="stylesheet" href="css/hero.css">
+<link rel="stylesheet" href="css/cards.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+<a href="#main-content" class="skip-link">Saltar al contenido principal</a>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header">
+  <div class="nav">
+    <div class="brand">
+      <div class="brand-mark"><img src="img/logo-mesa-regional.png" alt="Mesa Regional de Básquetbol XV Región"></div>
+      <div class="brand-text">Mesa Regional Básquetbol<span>Arica y Parinacota</span></div>
+    </div>
+
+    <nav class="links" aria-label="Navegación principal">
+      <a href="#noticias">Noticias</a>
+      <a href="#torneos">Torneos</a>
+      <a href="#jugadores">Jugadores</a>
+      <a href="#equipos">Equipos</a>
+      <a href="#videos">Videos</a>
+      <a href="#reglamentos">Reglamentos</a>
+    </nav>
+
+    <div class="nav-actions">
+      <form class="nav-search" role="search" aria-label="Buscar jugador por RUT">
+        <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+        <input type="text" placeholder="Buscar jugador..." aria-label="RUT del jugador">
+        <button type="submit" aria-label="Buscar"><i class="fa-solid fa-arrow-right" aria-hidden="true"></i></button>
+      </form>
+      <a href="https://arba-arica.cl/liga/todas" target="_blank" rel="noopener" class="nav-cta">Ver programación</a>
+      <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+        <span class="hamburger"><span></span><span></span><span></span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ============ MARQUESINA DE ANUNCIOS (texto infinito) ============ -->
+<div class="announce-bar" aria-label="Anuncios">
+  <div class="announce-track">
+    <span class="announce-group">
+      <span class="announce-item">📋 Inscripciones de torneos por categoría: próximamente disponibles</span>
+      <span class="announce-item">🏀 Verifica tu inscripción en la sección Jugadores</span>
+      <span class="announce-item">📄 Reglamentos oficiales disponibles para descarga</span>
+      <span class="announce-item">📺 Canal de YouTube en preparación para transmisiones en vivo</span>
+      <span class="announce-item">🗓️ Calendario de las 8 categorías: U13, U15, U17 y Adulto</span>
+    </span>
+    <span class="announce-group" aria-hidden="true">
+      <span class="announce-item">📋 Inscripciones de torneos por categoría: próximamente disponibles</span>
+      <span class="announce-item">🏀 Verifica tu inscripción en la sección Jugadores</span>
+      <span class="announce-item">📄 Reglamentos oficiales disponibles para descarga</span>
+      <span class="announce-item">📺 Canal de YouTube en preparación para transmisiones en vivo</span>
+      <span class="announce-item">🗓️ Calendario de las 8 categorías: U13, U15, U17 y Adulto</span>
+    </span>
+  </div>
+</div>
+
+<!-- ============ MENÚ MÓVIL (DRAWER) ============ -->
+<div class="drawer-backdrop"></div>
+<nav class="mobile-drawer" aria-label="Navegación móvil">
+  <div class="mobile-drawer-head">
+    <button class="mobile-drawer-close" aria-label="Cerrar menú"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button>
+  </div>
+  <div class="mobile-links">
+    <a href="#noticias">Noticias</a>
+    <a href="#torneos">Torneos</a>
+    <a href="#jugadores">Jugadores</a>
+    <a href="#equipos">Equipos</a>
+    <a href="#videos">Videos</a>
+    <a href="#reglamentos">Reglamentos</a>
+  </div>
+  <a href="https://arba-arica.cl/liga/todas" target="_blank" rel="noopener" class="btn btn-primary" style="width:100%; justify-content:center;">Ver programación</a>
+</nav>
+
+<main id="main-content">
+
+<!-- ============ HERO SLIDER ============ -->
+<section class="hero-slider" aria-label="Destacados">
+  <div class="swiper">
+    <div class="swiper-wrapper">
+
+      <div class="swiper-slide">
+        <div class="hero-slide">
+          <div class="hero-slide-bg">
+            <svg class="court-pattern" viewBox="0 0 1200 200" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+              <line x1="0" y1="100" x2="1200" y2="100" stroke="#1E5FD9" stroke-width="1" stroke-dasharray="6 12" opacity="0.4"/>
+              <circle cx="600" cy="100" r="60" fill="none" stroke="#1E5FD9" stroke-width="1" opacity="0.3"/>
+            </svg>
+          </div>
+          <div class="hero-slide-overlay"></div>
+          <div class="hero-slide-content">
+            <div class="hero-slide-inner">
+              <div class="eyebrow">Temporada 2026</div>
+              <h1>El básquetbol de la <span class="accent">XV región</span><br>en un solo lugar</h1>
+              <p class="subtitle">Noticias, resultados y la programación oficial de todos los torneos por categoría de Arica y Parinacota.</p>
+              <div class="hero-slide-actions">
+                <a href="https://arba-arica.cl/liga/todas" target="_blank" rel="noopener" class="btn btn-primary">Ver programación→</a>
+                <a href="#noticias" class="btn btn-ghost">Últimas noticias</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-slide">
+        <div class="hero-slide">
+          <div class="hero-slide-bg">
+            <svg class="court-pattern" viewBox="0 0 1200 200" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+              <line x1="0" y1="100" x2="1200" y2="100" stroke="#1E5FD9" stroke-width="1" stroke-dasharray="6 12" opacity="0.4"/>
+            </svg>
+          </div>
+          <div class="hero-slide-overlay"></div>
+          <div class="hero-slide-content">
+            <div class="hero-slide-inner">
+              <div class="eyebrow">Calendario regional</div>
+              <h1>8 categorías,<br>un solo <span class="accent">calendario</span></h1>
+              <p class="subtitle">U13, U15, U17 y Adulto, masculino y femenino. Cada torneo tendrá su propio enlace directo a la programación por temporada.</p>
+              <div class="hero-slide-actions">
+                <a href="#torneos" class="btn btn-primary">Ver torneos por categoría →</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-slide">
+        <div class="hero-slide">
+          <div class="hero-slide-bg">
+            <svg class="court-pattern" viewBox="0 0 1200 200" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+              <line x1="0" y1="100" x2="1200" y2="100" stroke="#1E5FD9" stroke-width="1" stroke-dasharray="6 12" opacity="0.4"/>
+            </svg>
+          </div>
+          <div class="hero-slide-overlay"></div>
+          <div class="hero-slide-content">
+            <div class="hero-slide-inner">
+              <div class="eyebrow">Verificación</div>
+              <h1>¿Estás <span class="accent">habilitado</span><br>para jugar?</h1>
+              <p class="subtitle">Ingresa tu RUT y confirma en segundos si apareces registrado, en qué categoría y con qué club.</p>
+              <div class="hero-slide-actions">
+                <a href="#jugadores" class="btn btn-primary">Buscar mi inscripción →</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-slide">
+        <div class="hero-slide">
+          <div class="hero-slide-bg">
+            <svg class="court-pattern" viewBox="0 0 1200 200" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+              <line x1="0" y1="100" x2="1200" y2="100" stroke="#1E5FD9" stroke-width="1" stroke-dasharray="6 12" opacity="0.4"/>
+            </svg>
+          </div>
+          <div class="hero-slide-overlay"></div>
+          <div class="hero-slide-content">
+            <div class="hero-slide-inner">
+              <div class="eyebrow">Próximamente en video</div>
+              <h1>Los partidos,<br><span class="accent">en vivo y diferido</span></h1>
+              <p class="subtitle">Estamos preparando nuestro canal de YouTube para transmitir los encuentros de la temporada.</p>
+              <div class="hero-slide-actions">
+                <a href="#transmisiones" class="btn btn-primary">Más información →</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-prev" role="button" tabindex="0"></div>
+    <div class="swiper-button-next" role="button" tabindex="0"></div>
+  </div>
+</section>
+
+<div class="court-divider">
+  <svg viewBox="0 0 1200 14" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <line x1="0" y1="7" x2="1200" y2="7" stroke="#1E5FD9" stroke-width="2" stroke-dasharray="6 10"/>
+  </svg>
+</div>
+
+<!-- ============ BREAKING NEWS ============ -->
+<section class="news reveal" id="noticias">
+  <div class="wrap">
+    <div class="section-head">
+      <div><span class="tag">Actualidad</span><h2>Últimas noticias</h2></div>
+      <a href="#" class="see-all">Ver todas →</a>
+    </div>
+    <div class="news-grid" id="newsGrid">
+      <div class="news-card" aria-hidden="true"><div class="news-img skeleton" style="color:transparent;">.</div><div class="news-body"><div class="skeleton" style="height:14px; width:40%;"></div><div class="skeleton" style="height:22px; width:90%; margin-top:10px;"></div></div></div>
+      <div class="news-card" aria-hidden="true"><div class="news-img skeleton" style="color:transparent;">.</div><div class="news-body"><div class="skeleton" style="height:14px; width:40%;"></div><div class="skeleton" style="height:22px; width:90%; margin-top:10px;"></div></div></div>
+      <div class="news-card" aria-hidden="true"><div class="news-img skeleton" style="color:transparent;">.</div><div class="news-body"><div class="skeleton" style="height:14px; width:40%;"></div><div class="skeleton" style="height:22px; width:90%; margin-top:10px;"></div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ GAME CENTER (torneos por categoría) ============ -->
+<section class="game-center reveal" id="torneos">
+  <div class="wrap">
+    <div class="section-head">
+      <div><span class="tag">Calendario</span><h2>Torneos por categoría</h2></div>
+    </div>
+    <div class="cat-grid" id="catGrid">
+      <div class="cat-card" aria-hidden="true"><div class="skeleton" style="height:26px; width:50%;"></div><div class="skeleton" style="height:14px; width:70%; margin-top:10px;"></div></div>
+      <div class="cat-card" aria-hidden="true"><div class="skeleton" style="height:26px; width:50%;"></div><div class="skeleton" style="height:14px; width:70%; margin-top:10px;"></div></div>
+      <div class="cat-card" aria-hidden="true"><div class="skeleton" style="height:26px; width:50%;"></div><div class="skeleton" style="height:14px; width:70%; margin-top:10px;"></div></div>
+      <div class="cat-card" aria-hidden="true"><div class="skeleton" style="height:26px; width:50%;"></div><div class="skeleton" style="height:14px; width:70%; margin-top:10px;"></div></div>
+    </div>
+    <div class="general-cta">
+      <div class="general-cta-text">
+        <h3>Programación general de todos los torneos</h3>
+        <p>Fixture completo, resultados y tabla de posiciones de cada categoría, administrado directamente en la plataforma oficial.</p>
+      </div>
+      <a href="https://arba-arica.cl/liga/todas" target="_blank" rel="noopener" class="btn btn-primary">Ir a arba-arica.cl →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ JUGADORES (buscador) ============ -->
+<section class="players reveal" id="jugadores">
+  <div class="wrap">
+    <div class="section-head">
+      <div><span class="tag">Verificación</span><h2>Busca tu inscripción</h2></div>
+    </div>
+    <p class="players-lead">Ingresa tu RUT para confirmar si estás habilitado para jugar y en qué categoría y club apareces registrado.</p>
+    <form class="player-search" id="playerSearchForm" autocomplete="off">
+      <label for="playerRut" class="visually-hidden">RUT del jugador</label>
+      <input type="text" id="playerRut" class="player-input" placeholder="Ej: 12345678-9" aria-label="RUT del jugador">
+      <button type="submit" class="btn btn-primary" id="playerSearchBtn">Buscar →</button>
+    </form>
+    <div id="playerResult" class="player-result" role="status" hidden></div>
+  </div>
+</section>
+
+<!-- ============ EQUIPOS / CLUBES ============ -->
+<section class="teams reveal" id="equipos">
+  <div class="wrap">
+    <div class="section-head">
+      <div><span class="tag">Participantes</span><h2>Clubes de la región</h2></div>
+    </div>
+    <div class="teams-grid" id="teamsGrid">
+      <div class="team-card" aria-hidden="true"><div class="skeleton" style="width:64px; height:64px; border-radius:50%; margin:0 auto;"></div><div class="skeleton" style="height:14px; width:70%; margin:14px auto 0;"></div></div>
+      <div class="team-card" aria-hidden="true"><div class="skeleton" style="width:64px; height:64px; border-radius:50%; margin:0 auto;"></div><div class="skeleton" style="height:14px; width:70%; margin:14px auto 0;"></div></div>
+      <div class="team-card" aria-hidden="true"><div class="skeleton" style="width:64px; height:64px; border-radius:50%; margin:0 auto;"></div><div class="skeleton" style="height:14px; width:70%; margin:14px auto 0;"></div></div>
+      <div class="team-card" aria-hidden="true"><div class="skeleton" style="width:64px; height:64px; border-radius:50%; margin:0 auto;"></div><div class="skeleton" style="height:14px; width:70%; margin:14px auto 0;"></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ VIDEOS ============ -->
+<section class="videos reveal" id="videos">
+  <div class="wrap">
+    <div class="section-head">
+      <div><span class="tag">Multimedia</span><h2>Videos destacados</h2></div>
+    </div>
+    <div class="videos-grid">
+      <div class="video-card">
+        <div class="video-thumb"><div class="video-play"><i class="fa-solid fa-play" aria-hidden="true"></i></div></div>
+        <div class="video-body"><span class="video-cat">Próximamente</span><h3>Aquí aparecerán los videos de partidos transmitidos</h3></div>
+      </div>
+      <div class="video-card">
+        <div class="video-thumb"><div class="video-play"><i class="fa-solid fa-play" aria-hidden="true"></i></div></div>
+        <div class="video-body"><span class="video-cat">Próximamente</span><h3>Mejores jugadas de la temporada</h3></div>
+      </div>
+      <div class="video-card">
+        <div class="video-thumb"><div class="video-play"><i class="fa-solid fa-play" aria-hidden="true"></i></div></div>
+        <div class="video-body"><span class="video-cat">Próximamente</span><h3>Resúmenes y repeticiones</h3></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ REGLAMENTOS ============ -->
+<section class="rules reveal" id="reglamentos">
+  <div class="wrap">
+    <div class="section-head">
+      <div><span class="tag">Normativa</span><h2>Reglamentos</h2></div>
+    </div>
+    <div class="rules-grid" style="grid-template-columns:1fr;">
+      <!-- // PDF: Bases del Torneo Apertura ARBA 2026 (documento único, vigente para todas las categorías) -->
+      <a href="https://lwsyntjhbcdfuhfjdjqf.supabase.co/storage/v1/object/public/documentos/Bases_Torneo_Apertura_ARBA_2026_v3.pdf" target="_blank" class="rule-card">
+        <div class="rule-icon">PDF</div>
+        <div class="rule-info"><h3>Reglamento del Torneo Apertura 2026</h3><span>Bases oficiales, vigentes para todas las categorías</span></div>
+        <span class="rule-download">Descargar →</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TRANSMISIONES (YouTube) ============ -->
+<section class="streaming reveal" id="transmisiones">
+  <div class="wrap streaming-inner">
+    <div>
+      <span class="tag" style="background:rgba(255,255,255,0.15); color:#fff;">En vivo</span>
+      <h3 style="margin-top:14px;">Sigue los partidos transmitidos</h3>
+      <p>Los encuentros que se transmiten en vivo quedan disponibles en nuestro canal de YouTube, junto con repeticiones y mejores jugadas.</p>
+    </div>
+    <a href="https://youtube.com" target="_blank" rel="noopener" class="btn btn-white">Ir al canal de YouTube →</a>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer id="contacto">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">Mesa Regional Básquetbol XV Región</div>
+        <p>Coordinación oficial del básquetbol federado en la región de Arica y Parinacota. Noticias, torneos y vínculo directo con la programación.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
+          <a href="https://youtube.com" target="_blank" rel="noopener" aria-label="YouTube"><i class="fa-brands fa-youtube" aria-hidden="true"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Navegación</h4>
+        <ul>
+          <li><a href="#noticias">Noticias</a></li>
+          <li><a href="#torneos">Torneos</a></li>
+          <li><a href="#jugadores">Jugadores</a></li>
+          <li><a href="#equipos">Equipos</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Enlaces</h4>
+        <ul>
+          <li><a href="https://arba-arica.cl/liga/todas" target="_blank" rel="noopener">Programación</a></li>
+          <li><a href="#reglamentos">Reglamentos</a></li>
+          <li><a href="#transmisiones">Canal de YouTube</a></li>
+        </ul>
+      </div>
+      <div class="footer-col footer-newsletter">
+        <h4>Mantente al día</h4>
+        <form onsubmit="return false;">
+          <input type="email" placeholder="Tu correo electrónico" aria-label="Correo electrónico">
+          <button type="submit" class="btn btn-primary btn-sm">Suscribirme</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="footer-partners">
+      <span class="footer-partners-label">Con la colaboración de</span>
+      <div class="footer-partners-logos">
+        <img src="img/logo-aba.png" alt="Asociación de Basquetbol de Arica">
+        <img src="img/logo-arba-arica.png" alt="ARBA Arica">
+        <img src="img/logo-municipalidad.png" alt="Municipalidad de Arica">
+        <img src="img/logo-seremi.png" alt="SEREMI del Deporte, Región de Arica y Parinacota">
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© <span id="currentYear">2026</span> Mesa Regional de Básquetbol, XV Región.</span>
+      <span>Programación y resultados oficiales</span>
+    </div>
+  </div>
+</footer>
+
+<!-- Swiper.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
+
+<!-- Scripts modulares -->
+<script src="js/app.js"></script>
+<script src="js/slider.js"></script>
+<script src="js/matches.js"></script>
+<script src="js/animations.js"></script>
+
+</body>
+</html>

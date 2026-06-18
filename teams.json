@@ -1,0 +1,6 @@
+[
+  { "id": "club-1", "nombre": "Club ejemplo 1", "ciudad": "Arica", "logo": "" },
+  { "id": "club-2", "nombre": "Club ejemplo 2", "ciudad": "Arica", "logo": "" },
+  { "id": "club-3", "nombre": "Club ejemplo 3", "ciudad": "Putre", "logo": "" },
+  { "id": "club-4", "nombre": "Club ejemplo 4", "ciudad": "Arica", "logo": "" }
+]

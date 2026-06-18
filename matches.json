@@ -1,0 +1,10 @@
+[
+  { "id": "u13-m", "categoria": "U13", "genero": "Masculino", "estado": "activo", "enlace": "https://arba-arica.cl/liga/apertura-u13-varones" },
+  { "id": "u13-f", "categoria": "U13", "genero": "Femenino", "estado": "activo", "enlace": "https://arba-arica.cl/liga/apertura-u13-damas" },
+  { "id": "u15-m", "categoria": "U15", "genero": "Masculino", "estado": "activo", "enlace": "https://arba-arica.cl/liga/apertura-u15-varones" },
+  { "id": "u15-f", "categoria": "U15", "genero": "Femenino", "estado": "activo", "enlace": "https://arba-arica.cl/liga/apertura-u15-damas" },
+  { "id": "u17-m", "categoria": "U17", "genero": "Masculino", "estado": "activo", "enlace": "https://arba-arica.cl/liga/apertura-u17-varones" },
+  { "id": "u17-f", "categoria": "U17", "genero": "Femenino", "estado": "activo", "enlace": "https://arba-arica.cl/liga/apertura-u17-damas" },
+  { "id": "ad-m",  "categoria": "Adulto", "genero": "Masculino", "estado": "activo", "enlace": "https://arba-arica.cl/liga/apertura-varones-todo-competidor" },
+  { "id": "ad-f",  "categoria": "Adulto", "genero": "Femenino", "estado": "activo", "enlace": "https://arba-arica.cl/liga/apertura-damas-todo-competidor" }
+]

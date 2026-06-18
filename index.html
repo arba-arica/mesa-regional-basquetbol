@@ -359,12 +359,11 @@
           <li><a href="#transmisiones">Canal de YouTube</a></li>
         </ul>
       </div>
-      <div class="footer-col footer-newsletter">
-        <h4>Mantente al día</h4>
-        <form onsubmit="return false;">
-          <input type="email" placeholder="Tu correo electrónico" aria-label="Correo electrónico">
-          <button type="submit" class="btn btn-primary btn-sm">Suscribirme</button>
-        </form>
+      <div class="footer-col">
+        <h4>Acceso</h4>
+        <ul>
+          <li><a href="#" onclick="abrirAdmin();return false;" style="color:rgba(255,255,255,0.4);font-size:12px;">⚙ Panel administrador</a></li>
+        </ul>
       </div>
     </div>
 
@@ -385,6 +384,11 @@
   </div>
 </footer>
 
+<!-- ============ PANEL ADMIN ============ -->
+<div id="admin-overlay" style="display:none;position:fixed;inset:0;z-index:500;background:#0A1628;overflow-y:auto;"></div>
+<div id="adm-modal-overlay" style="display:none;position:fixed;inset:0;z-index:600;background:rgba(10,22,40,0.8);backdrop-filter:blur(4px);align-items:center;justify-content:center;padding:20px;"></div>
+<div id="adm-toast" style="position:fixed;bottom:30px;left:50%;transform:translateX(-50%) translateY(10px);background:#1E5FD9;color:#fff;padding:12px 24px;border-radius:100px;font-size:13px;font-weight:700;opacity:0;transition:all 0.3s;z-index:700;pointer-events:none;white-space:nowrap;"></div>
+
 <!-- Swiper.js -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
 
@@ -393,6 +397,7 @@
 <script src="js/slider.js"></script>
 <script src="js/matches.js"></script>
 <script src="js/animations.js"></script>
+<script src="js/admin.js"></script>
 
 </body>
 </html>

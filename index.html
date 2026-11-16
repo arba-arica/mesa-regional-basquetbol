@@ -167,6 +167,15 @@ section{padding:56px 0}
 .video-title{font-size:14px;font-weight:700;color:#fff;line-height:1.35}
 .videos-footer{text-align:center;margin-top:28px}
 
+/* RESULTADOS 3x3 (FIBA) */
+#resultados-3x3{background:var(--navy2)}
+#resultados-3x3 .sec-title{color:#fff}
+#resultados-3x3 .sec-desc{color:rgba(255,255,255,.55)}
+.fiba-top{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-bottom:28px}
+.fiba-badge{display:inline-flex;align-items:center;gap:6px;font-size:11px;font-weight:700;color:#4ade80;background:rgba(74,222,128,.08);border:1px solid rgba(74,222,128,.2);padding:4px 10px;border-radius:100px}
+.fiba-embed{background:#fff;border-radius:var(--r2);padding:12px;min-height:320px;overflow-x:auto}
+.fiba-embed iframe{width:100%!important;border:0}
+
 /* REGLAMENTOS — columna angosta centrada */
 #reglamentos{background:var(--gray1)}
 .rules-wrap{max-width:560px;margin:0 auto}
@@ -234,6 +243,7 @@ footer{background:var(--navy);padding:48px 0 24px}
     </a>
     <nav class="header-nav">
       <a href="#torneos">Torneos</a>
+      <a href="#resultados-3x3">3x3</a>
       <a href="#jugadores">Jugadores</a>
       <a href="#videos">Videos</a>
       <a href="#reglamentos">Reglamentos</a>
@@ -261,6 +271,7 @@ footer{background:var(--navy);padding:48px 0 24px}
     </div>
     <div class="drawer-links">
       <a href="#torneos" onclick="closeDrawer()"><span>🏀</span> Torneos</a>
+      <a href="#resultados-3x3" onclick="closeDrawer()"><span>🏆</span> Resultados 3x3</a>
       <a href="#jugadores" onclick="closeDrawer()"><span>🔍</span> Jugadores</a>
       <a href="#videos" onclick="closeDrawer()"><span>📺</span> Videos</a>
       <a href="#reglamentos" onclick="closeDrawer()"><span>📄</span> Reglamentos</a>
@@ -441,6 +452,23 @@ footer{background:var(--navy);padding:48px 0 24px}
   </div>
 </section>
 
+<!-- RESULTADOS 3x3 (FIBA) -->
+<section id="resultados-3x3">
+  <div class="wrap">
+    <div class="fiba-top">
+      <div>
+        <span class="sec-label">FIBA 3x3 · Resultados oficiales</span>
+        <h2 class="sec-title">Resultados 3x3</h2>
+        <p class="sec-desc">Resultados y clasificación actualizados desde la plataforma oficial de FIBA 3x3.</p>
+      </div>
+      <div class="fiba-badge"><span class="verif-dot"></span> En vivo</div>
+    </div>
+    <div class="fiba-embed">
+      <script data-fiba-embedtype="results" data-fiba-eventid="b29fb89a-44a8-42eb-93b0-1c3bcb924de1" src="https://play.fiba3x3.com/embed.js" async></script>
+    </div>
+  </div>
+</section>
+
 <!-- VERIFICACIÓN — card única centrada -->
 <section id="jugadores">
   <div class="wrap">
@@ -542,6 +570,7 @@ footer{background:var(--navy);padding:48px 0 24px}
           <li><a href="#torneos">Categorías Damas</a></li>
           <li><a href="#torneos">Categorías Varones</a></li>
           <li><a href="https://arba-arica.cl/liga/todas" target="_blank">Programación completa</a></li>
+          <li><a href="#resultados-3x3">Resultados 3x3</a></li>
         </ul>
       </div>
       <div class="footer-col">
